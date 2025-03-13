@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>GuessMaster 100</title>
+</head>
+<body>
+    <header>
+        <h1>GuessMaster 100</h1>
+        
+    </header>
+    <main>
+        <section>
+            <h2>Guess the number between 1 and 100</h2>
+
+            <h3>Enter your guess:</h3>
+            <input type="number" id="guessField" min="1" max="100" placeholder="Enter your guess">
+            <button id="guessSubmit" onclick="checkGuess()">Submit</button>
+            <br>
+            <br>
+            <button id="playAgain" onclick="resetGame()" style="display: none;">Play Again</button>
+        </section>
+        <section>
+            <h3>Previous guesses:</h3>
+            <div id="guesses"></div>
+        </section>
+        <section>
+            <h3 >Result:</h3>
+            <p id="guessResult"></p>
+        </section>
+        <section>
+            <h3>Attempts:</h3>
+            <p id="attempts"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 GuessMaster 100</p>
+
+    <script src="script.js"></script> 
+</body>
+</html>
